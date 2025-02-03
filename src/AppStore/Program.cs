@@ -10,6 +10,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<ILibroservice, LibroService>();
+builder.Services.AddScoped<IUserAuthenticationService, UserAuthenticationService>();
+
+
 builder.Services.AddDbContext<DatabaseContext> (opt => {
     opt.LogTo(Console.WriteLine, new [] {
         DbLoggerCategory.Database.Command.Name},
