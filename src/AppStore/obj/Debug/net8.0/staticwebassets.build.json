@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "A+wgXSM7uWVqBYSeIWfjTqjw9yV5kYLdc1txZ9qS958=",
+  "Hash": "lAP6Nm8rt7UzUCfKv/N7DI48VFpy+jtMEME6Agsa7rs=",
   "Source": "AppStore",
   "BasePath": "_content/AppStore",
   "Mode": "Default",
@@ -53,6 +53,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\ProyectosNet2025\\aspnet\\src\\AppStore\\wwwroot\\Uploads\\harry.jpg",
+      "SourceId": "AppStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ProyectosNet2025\\aspnet\\src\\AppStore\\wwwroot\\",
+      "BasePath": "_content/AppStore",
+      "RelativePath": "Uploads/harry.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\harry.jpg"
+    },
+    {
+      "Identity": "C:\\ProyectosNet2025\\aspnet\\src\\AppStore\\wwwroot\\Uploads\\quijote.jpg",
+      "SourceId": "AppStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ProyectosNet2025\\aspnet\\src\\AppStore\\wwwroot\\",
+      "BasePath": "_content/AppStore",
+      "RelativePath": "Uploads/quijote.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\quijote.jpg"
     }
   ]
 }

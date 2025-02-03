@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppStore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d0f8a9d7dc0071cb34ba2085a0385e5ec823827")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1df1c4382cd2de682c6fc79ba2e84d091daaf8f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppStore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppStore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

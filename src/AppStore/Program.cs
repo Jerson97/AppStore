@@ -1,4 +1,6 @@
 using AppStore.Models.Domain;
+using AppStore.Repositories.Abstract;
+using AppStore.Repositories.Implementation;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddScoped<ILibroservice, LibroService>();
 builder.Services.AddDbContext<DatabaseContext> (opt => {
     opt.LogTo(Console.WriteLine, new [] {
         DbLoggerCategory.Database.Command.Name},
