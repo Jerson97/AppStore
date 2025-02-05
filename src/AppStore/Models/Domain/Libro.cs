@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace AppStore.Models.Domain;
 
@@ -20,4 +21,10 @@ public class Libro
     public List<int>? Categorias {get; set;}
     [NotMapped]
     public string? CategoriaNombre {get; set;}
+    [NotMapped]
+    public IFormFile? ImageFile {get; set;}
+    [NotMapped]
+    public IEnumerable<SelectListItem>? CategoriaLista {get; set;}
+    [NotMapped]
+    public MultiSelectList? MultiCategoriaList {get; set;}
 }

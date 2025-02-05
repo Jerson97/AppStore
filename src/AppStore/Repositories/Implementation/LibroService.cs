@@ -108,7 +108,7 @@ public class LibroService : ILibroservice
             data.PageSize = pageSize;
             data.Currentpage = currentPage;
             data.TotalPages = TotalPages;
-
+        }
             foreach (var libro in list)
             {
                 var categorias = (
@@ -123,10 +123,8 @@ public class LibroService : ILibroservice
             }
 
             data.LibroList = list.AsQueryable();
-            
-        }
-
-        return data;
+             return data;
+       
     }
 
     public List<int> ObtenerCategoriaPorLibroId(int libroId)
