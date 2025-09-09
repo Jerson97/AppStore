@@ -1,7 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\ProyectosNet2025\\aspnet\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\ProyectosNet2025\\AppStore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0E133CFB-ABA7-4118-8AD5-227CF14BE542}|src\\AppStore\\AppStore.csproj|c:\\proyectosnet2025\\appstore\\src\\appstore\\models\\domain\\loaddatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E133CFB-ABA7-4118-8AD5-227CF14BE542}|src\\AppStore\\AppStore.csproj|solutionrelative:src\\appstore\\models\\domain\\loaddatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +27,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoadDatabase.cs",
+              "DocumentMoniker": "C:\\ProyectosNet2025\\AppStore\\src\\AppStore\\Models\\Domain\\LoadDatabase.cs",
+              "RelativeDocumentMoniker": "src\\AppStore\\Models\\Domain\\LoadDatabase.cs",
+              "ToolTip": "C:\\ProyectosNet2025\\AppStore\\src\\AppStore\\Models\\Domain\\LoadDatabase.cs",
+              "RelativeToolTip": "src\\AppStore\\Models\\Domain\\LoadDatabase.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T15:28:28.38Z",
+              "EditorCaption": ""
             }
           ]
         },

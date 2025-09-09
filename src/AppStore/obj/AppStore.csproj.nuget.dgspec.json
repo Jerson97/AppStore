@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProyectosNet2025\\aspnet\\src\\AppStore\\AppStore.csproj": {}
+    "C:\\ProyectosNet2025\\AppStore\\src\\AppStore\\AppStore.csproj": {}
   },
   "projects": {
-    "C:\\ProyectosNet2025\\aspnet\\src\\AppStore\\AppStore.csproj": {
+    "C:\\ProyectosNet2025\\AppStore\\src\\AppStore\\AppStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProyectosNet2025\\aspnet\\src\\AppStore\\AppStore.csproj",
+        "projectUniqueName": "C:\\ProyectosNet2025\\AppStore\\src\\AppStore\\AppStore.csproj",
         "projectName": "AppStore",
-        "projectPath": "C:\\ProyectosNet2025\\aspnet\\src\\AppStore\\AppStore.csproj",
-        "packagesPath": "C:\\Users\\PERSONAL\\.nuget\\packages\\",
-        "outputPath": "C:\\ProyectosNet2025\\aspnet\\src\\AppStore\\obj\\",
+        "projectPath": "C:\\ProyectosNet2025\\AppStore\\src\\AppStore\\AppStore.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "C:\\ProyectosNet2025\\AppStore\\src\\AppStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\PERSONAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
