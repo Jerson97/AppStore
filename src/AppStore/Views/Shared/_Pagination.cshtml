@@ -1,0 +1,32 @@
+﻿@model AppStore.Models.DTO.LibroListVm
+
+@{
+    var term = Model.Term ?? "";
+    var currentPage = Model.Currentpage;
+    var totalPages = Model.TotalPages;
+}
+
+@if (totalPages > 1)
+{
+    <nav>
+        <ul class="pagination">
+            <!-- Botón Anterior -->
+            <li class="page-item @(currentPage == 1 ? "disabled" : "")">
+                <a class="page-link" asp-route-currentPage="@(currentPage - 1)" asp-route-term="@term">Anterior</a>
+            </li>
+
+            <!-- Números de página -->
+            @for (int i = 1; i <= totalPages; i++)
+            {
+                <li class="page-item @(i == currentPage ? "active" : "")">
+                    <a class="page-link" asp-route-currentPage="@i" asp-route-term="@term">@i</a>
+                </li>
+            }
+
+            <!-- Botón Siguiente -->
+            <li class="page-item @(currentPage == totalPages ? "disabled" : "")">
+                <a class="page-link" asp-route-currentPage="@(currentPage + 1)" asp-route-term="@term">Siguiente</a>
+            </li>
+        </ul>
+    </nav>
+}

@@ -88,7 +88,7 @@ public class LibroService : ILibroservice
         }
     }
 
-    public LibroListVm Listar(string term = "", bool paging = false, int currentPage = 0)
+    public LibroListVm Listar(string term = "", bool paging = false, int currentPage = 1)
     {
         var data = new LibroListVm();
         var list = _context.Libros!.ToList();

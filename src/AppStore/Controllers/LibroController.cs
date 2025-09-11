@@ -114,9 +114,9 @@ public class LibroController : Controller
         
     }
 
-    public IActionResult LibroList()
+    public IActionResult LibroList(string term = "", int currentPage = 1)
     {
-        var libros = _libroService.Listar();
+        var libros = _libroService.Listar(term, true, currentPage);
         return View(libros);
     }
 

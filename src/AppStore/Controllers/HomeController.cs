@@ -12,14 +12,15 @@ public class HomeController : Controller
     }
     public IActionResult Index(string term="", int currentPage =1)
     {
-        var libros = _libroService.Listar(term, true, currentPage);
-
-        return View(libros);
+        var model = _libroService.Listar(term, paging: true, currentPage: currentPage);
+        return View(model);
     }
 
     public IActionResult LibroDetail(int libroId)
     {
         var libro = _libroService.ObtenerId(libroId);
+        if (libro == null) return NotFound();
+
         return View(libro);
     }
 
