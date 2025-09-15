@@ -14,6 +14,7 @@ public class Libro
     public string? Imagen { get; set; }
     [Required]
     public string? Autor { get; set; }
+    public string? Resumen { get; set; }
     public virtual ICollection<Categoria>? CategoriaList { get; set; }
     public virtual ICollection<LibroCategoria>? LibroCategoriaList { get; set; }
 

@@ -261,3 +261,35 @@
       flex-basis: 96%;
     }
   }
+
+/* Estilos para vista LibroDetail */
+.book-detail {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    width: 80%;
+    margin: auto;
+}
+
+    .book-detail .img-container {
+        flex: 1;
+    }
+
+        .book-detail .img-container img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+    .book-detail .detail-container {
+        flex: 2;
+    }
+
+.resumen-box {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fafafa;
+}
+

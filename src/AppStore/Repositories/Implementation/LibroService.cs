@@ -1,6 +1,7 @@
 using AppStore.Models.Domain;
 using AppStore.Models.DTO;
 using AppStore.Repositories.Abstract;
+using Microsoft.EntityFrameworkCore;
 
 namespace AppStore.Repositories.Implementation;
 
@@ -134,6 +135,28 @@ public class LibroService : ILibroservice
 
     public Libro ObtenerId(int id)
     {
-       return _context.Libros!.Find(id)!;
+        var libro = _context.Libros!
+            .Include(x => x.LibroCategoriaList)! // Incluir la tabla de unión si vas a usarla para el join
+            .ThenInclude(lc => lc.Categoria)     // Luego incluir la entidad Categoria a través de la tabla de unión
+            .FirstOrDefault(l => l.Id == id);    // ¡Importante! Filtrar por el ID del libro
+
+        if (libro != null)
+        {
+            // Si el libro tiene categorías asociadas a través de LibroCategoriaList
+            if (libro.LibroCategoriaList != null && libro.LibroCategoriaList.Any())
+            {
+                // Extraer los nombres de las categorías y unirlos
+                var categoriasNombres = libro.LibroCategoriaList
+                                             .Select(lc => lc.Categoria!.Nombre) // Asegúrate que 'Categoria' no es null aquí
+                                             .ToList();
+                libro.CategoriaNombre = string.Join(", ", categoriasNombres);
+            }
+            else
+            {
+                libro.CategoriaNombre = "Sin Categoría"; // O dejarlo como null o cadena vacía
+            }
+        }
+
+        return libro;
     }
 }

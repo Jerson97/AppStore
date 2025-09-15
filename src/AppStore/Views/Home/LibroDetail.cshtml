@@ -1,22 +1,30 @@
-@model AppStore.Models.Domain.Libro;
+@model AppStore.Models.Domain.Libro
 @{
-
+    ViewData["Title"] = @Model.Titulo;
 }
 
-<div class="movie-detail w-80 m-auto">
+<div class="book-detail w-80 m-auto">
+    <!-- Imagen -->
     <div class="img-container">
-        <img alt="portada libro" src="/Uploads/@Model.Imagen">
+        <img alt="portada libro" src="/Uploads/@Model.Imagen" class="book-image">
     </div>
 
+    <!-- Detalle + Resumen -->
     <div class="detail-container">
-        <h3>@Model.Titulo</h3>
-        <h4>@Model.CategoriaNombre</h4>
-        <h4>@Model.CreateDate</h4>
-        <h4>Autor: @Model.Autor</h4>
-    </div>
+        <h1>@Model.Titulo</h1>
+        <ul>
+            <li><strong>Autor:</strong> @Model.Autor</li>
+            <li><strong>Categoría:</strong> @Model.CategoriaNombre</li>
+            <li><strong>Fecha de Publicación:</strong> @Model.CreateDate</li>
+        </ul>
 
-    <div class="w-80 m-auto">
-        <a href="/Home/Index" class="btn-default">Atras</a>
+        <div class="resumen-box">
+            <h3>Resumen</h3>
+            <p>@Model.Resumen</p>
+        </div>
     </div>
+</div>
 
+<div class="w-80 m-auto back-btn-container">
+    <a href="/Home/Index" class="btn-default">Atrás</a>
 </div>

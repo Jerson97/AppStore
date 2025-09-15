@@ -44,7 +44,11 @@ public class LoadDatabase{
                     Titulo = "El Quijote de la Mancha",
                     CreateDate = "06/06/2020",
                     Imagen = "quijote.jpg",
-                    Autor = "Miguel de Cervantes"
+                    Autor = "Miguel de Cervantes",
+                    Resumen = "Lorem ipsum dolor sit amet consectetur adipiscing elit mus praesent taciti sociosqu fames, " +
+                    "purus penatibus litora eget torquent molestie vivamus quisque potenti feugiat turpis, convallis himenaeos " +
+                    "tempus placerat dis ut malesuada varius phasellus natoque eu. Congue in ornare iaculis feugiat conubia et " +
+                    "sagittis convallis consequat, auctor class dapibus sodales placerat felis nisi dictumst fringilla nascetur, nostra pellentesque facilisi penatibus luctus litora augue vivamus. Hac taciti aenean vel scelerisque nullam vulputate, sagittis nec eros auctor cum augue tempus, sollicitudin feugiat nisl porta porttitor phasellus, aliquam ridiculus sapien vitae turpis. At interdum gravida orci ante lobortis ridiculus augue, himenaeos morbi venenatis magnis dignissim placerat nunc, praesent nisl lacus montes aptent parturient."
                 },
 
                 new Libro{
